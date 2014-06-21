@@ -25,6 +25,8 @@ class AppController extends Controller {
 			Configure::write('meta_title', $value['Domain']['meta_title']);
 			Configure::write('meta_keywords', $value['Domain']['meta_keywords']);
 			Configure::write('meta_description', $value['Domain']['meta_description']); 
+			
+			etc retrieve as many domain specific values as required from database
 		}
 	}
 }
