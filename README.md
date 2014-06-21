@@ -9,10 +9,12 @@ CakePHP is put into the one shared sub domain directory.
 
 Create your CakePHP application as normal but add the following:
 
-1. Table called domain (or whatever you want with as many columns as you need) that will hold domain specific values that are used in the CakePHP to retrieved to be used in controllers and views.
+1. Table called domain (or whatever you want with as many columns as you need) that will hold domain specific values that are retrieved to be used in in application.
 
-2. Add function to AppController (see AppController code) and refer to it in AppController BeforeFilter. This will read domain name from site visitor and retrieve only that domain's values from database and make Configure:Read variables to be used elsewhere in application.
+2. Add getDomainSettings function to AppController and call it in AppController BeforeFilter. This reads domain name from site visitor and then usess that to retrieve only that domain's values from database which are then used to make CakePHP Configure:Read variables to be used elsewhere in application.
 
-3. As required, add condition to other controllers that filters model records to only the current domain by using Configure:Write to get values to compare to.
+3. As required, add condition using CakePHP Configure:Write in other controllers' to filter model records to only the current domain.
 
-I am currently using this with 6 domains.  Each of these 6 sites are filtered to specific countries but otherwise the presentation of content is the same in each. I  include Google Analytics code in database so that each site can be separately tracked. Instead of countries uou could filter for brands, product categories, client, etc. You could also swap out css styles or CakePHP themes.  
+I am currently using this with 6 domains.  Each of these 6 sites are filtered to specific countries but otherwise the presentation of content is the same. The alternative was maintaining 6 separate CakePHP applications and MySQL databases.
+
+I include Google Analytics code in database so that each site can be separately tracked. Instead of countries uou could filter for brands, product categories, client, etc. You could also swap out css styles or CakePHP themes.  
