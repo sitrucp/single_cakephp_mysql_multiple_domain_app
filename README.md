@@ -11,7 +11,7 @@ Create your CakePHP application as normal but add the following:
 
 1. Table called domain (or whatever you want with as many columns as you need) that will hold domain specific values that are retrieved to be used in in application.
 
-2. Add domain table foreign key (domain_id) to other tables so that they can be filtered by domain when retrieving data.
+2. Add domain table foreign key (domain_id) to other tables so that they can be filtered by domain when retrieving data. (This means likely you will require additional steps to ensure that the foreign key is written to your tables. How you do that is up to you but for example if you allow users to create accounts or post comments then you can simply record the domain_id Configure::read value when new user or comment is added.)
 
 3. Add getDomainSettings function to AppController and call it in AppController beforeFilter. This reads domain name from current site visitor and then uses that to retrieve only that domain's values from database which are then used to make CakePHP Configure::write variables to be used elsewhere in application.
 
