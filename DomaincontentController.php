@@ -9,7 +9,7 @@ class DomaincontentsController extends AppController {
 		//retrieve data from model for current domain only
 		$this->set('domaincontent', $this->paginate(array('domain_id' => Configure::read('domain_id'))));
 		
-		//this controller can be used as normal in its View
+		//this controller can be used as normal by View
 	}
 
 
