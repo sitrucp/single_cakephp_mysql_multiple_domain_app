@@ -8,6 +8,8 @@ class DomaincontentsController extends AppController {
 		$this->Domaincontent->recursive = 0;
 		//retrieve data from model for current domain only
 		$this->set('domaincontent', $this->paginate(array('domain_id' => Configure::read('domain_id'))));
+		
+		//this controller can be used as normal in its View
 	}
 
 
