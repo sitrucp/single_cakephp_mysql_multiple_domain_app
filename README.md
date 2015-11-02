@@ -20,3 +20,7 @@ Create your CakePHP application as normal but add the following:
 I am currently using this with 6 domains.  My requirement was to provide same presentation of content but for separate countries.  The alternative was maintaining 6 separate CakePHP applications and MySQL databases.
 
 I included things like country name, country flag, meta data (keywords etc).  I also include each domain's Google Analytics code in database so that each site can be separately tracked. Instead of countries uou could filter for brands, product categories, client, etc.  You could also swap out css styles or CakePHP themes.  
+
+More details at this blog post:
+
+[http://itisbiz.com/cakephp-one-app-and-db-with-multiple-domains/] (http://itisbiz.com/cakephp-one-app-and-db-with-multiple-domains/)
