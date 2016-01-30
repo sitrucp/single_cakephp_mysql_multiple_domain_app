@@ -23,4 +23,4 @@ I included things like country name, country flag, meta data (keywords etc).  I 
 
 More details at this blog post:
 
-[http://itisbiz.com/cakephp-one-app-and-db-with-multiple-domains/] (http://itisbiz.com/cakephp-one-app-and-db-with-multiple-domains/)
+[http://009co.com/?p=249] (http://009co.com/?p=249)
