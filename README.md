@@ -20,4 +20,4 @@ Create your CakePHP application as normal but add the following:
 
 More details at this blog post:
 
-[http://009co.com/?p=249] (http://009co.com/?p=249)
+[https://curtispokrant.com/posts/cakephp-one-app-and-db-with-multiple-domains/](https://curtispokrant.com/posts/cakephp-one-app-and-db-with-multiple-domains/)
